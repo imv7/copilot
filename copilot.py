@@ -1,16 +1,11 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import pyautogui
 import time
+import os
 
 try:
-    # Inicializar o driver do navegador (certifique-se de ter o driver correspondente ao seu navegador instalado)
-    print("Inicializando o driver do navegador...")
-    driver = webdriver.Edge()
-
-    # Abrir o navegador e acessar o arquivo PDF
+    # Abrir o arquivo PDF com o navegador padrão (Microsoft Edge)
     print("Abrindo o arquivo PDF...")
-    driver.get("file:///C:/Users/IgorMonteiro/Documents/csd.pdf")
+    os.startfile("C:/Users/IgorMonteiro/Documents/csd.pdf")
 
     # Esperar o PDF carregar (ajuste conforme necessário)
     print("Aguardando o carregamento do PDF...")
